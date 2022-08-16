@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -19,26 +20,49 @@
     <title>Shopify Clone</title>
 </head>
 <body>
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl">Tailblocks</span>
-          </a>
-          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900">First Link</a>
-            <a class="mr-5 hover:text-gray-900">Second Link</a>
-            <a class="mr-5 hover:text-gray-900">Third Link</a>
-            <a class="mr-5 hover:text-gray-900">Fourth Link</a>
-          </nav>
-          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-        </div>
-      </header>
+    <div class="bg-[#fbf7ed]">
+        <header class="text-gray-600 body-font">
+            <div class="container mx-auto md:px-[80px] flex flex-wrap p-5 flex-col md:flex-row items-center md:fixed">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-[#084f3f] rounded-full" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-2xl text-black font-bold italic">Shopify</span>
+            </a>
+            <nav class="md:relative md:ml-auto md:mr-auto flex flex-wrap text-base cursor-pointer">
+                <a class="mr-[25px] text-gray-600 hover:text-black text-[18px] font-medium">Start <i class="fa fa-angle-down ml-[3px]" aria-hidden="true"></i></a>
+                <a class="mr-[25px] text-gray-600 hover:text-black text-[18px] font-medium">Sell <i class="fa fa-angle-down ml-[3px]" aria-hidden="true"></i></a>
+                <a class="mr-[25px] text-gray-600 hover:text-black text-[18px] font-medium">Market <i class="fa fa-angle-down ml-[3px]" aria-hidden="true"></i></a>
+                <a class="mr-[25px] text-gray-600 hover:text-black text-[18px] font-medium">Manage <i class="fa fa-angle-down ml-[3px]" aria-hidden="true"></i></a>
+            </nav>
+            <nav class="md:relative md:ml-auto md:mr-auto flex flex-wrap text-base md:right-[-50px] cursor-pointer">
+                <a class="mr-[25px] text-gray-600 hover:text-black text-[18px] font-medium">Pricing </a>
+                <a class="mr-[25px] text-gray-600 hover:text-black text-[18px] font-medium">Learn <i class="fa fa-angle-down ml-[3px]" aria-hidden="true"></i></a>
+                <a class="mr-[25px] text-gray-600 hover:text-black text-[18px] font-medium">Login </a>
+            </nav>
+            <button class="inline-flex items-center bg-[#008060] border-0 py-[10px] px-[25px] focus:outline-none hover:bg-[#084f3f] rounded text-base mt-4 md:mt-0 text-white cursor-pointer">Try for free
+            </button>
+            </div>
+        </header>
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 lg:pb-[150px] md:flex-row flex-col items-center md:px-[80px] md:relative md:top-[80px]">
+                <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 class="title-font text-[#084f3f] md:text-[45px] text-4xl mb-4 font-bold text-gray-900">The easiest way to sell</h1>
+                    <h1 class="title-font text-[#084f3f] md:text-[45px] text-4xl mb-4  md:mt-[10px] font-bold text-gray-900">online in India</h1>
+                    <p class="mb-8 lg:mt-[20px] lg:text-[20px] leading-relaxed">Try one of the most powerful platforms on the <br>market for free. No technical knowledge needed.</p>
+                    <div class="flex w-full md:justify-start justify-center items-end">
+                    <div class="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
+                        <input type="text" id="hero-field" name="hero-field" placeholder="Enter your email address" class="w-full md:w-[350px] md:h-[50px] bg-gray-100 rounded border bg-opacity-50 border-black focus:ring-2 focus:ring-[#008060] focus:bg-transparent focus:border-[#008060] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <button class="inline-flex items-center md:ml-[100px] bg-[#008060] border-0 py-[13px] px-[25px] focus:outline-none hover:bg-[#084f3f] rounded text-base mt-4 md:mt-0 text-white cursor-pointer">Try for free
+                    </div>
+                    <p class="text-sm mt-2 text-gray-500 mb-8 w-full lg:mt-[20px] lg:text-[13px]">Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <div class="video__video-container"><video muted="muted" loop="loop" playsinline="playsinline" data-autoplay="true" data-lazyload="true" data-poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/hero/exp-inbrochurebannerv2-video-poster-f61611dccbbf0aaa60f0e6aa3662448acc8ab35938a29bae99a61366874a43ef.png" class="video__video" autoplay="" poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/hero/exp-inbrochurebannerv2-video-poster-f61611dccbbf0aaa60f0e6aa3662448acc8ab35938a29bae99a61366874a43ef.png"><source data-src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/inbrochurebannerv2-firstsale-7285dab321cc85c3b6ac858bce1a2b0a2db3504db0937e1883dc96d195524da5.webm" type="video/webm" src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/inbrochurebannerv2-firstsale-7285dab321cc85c3b6ac858bce1a2b0a2db3504db0937e1883dc96d195524da5.webm"><source data-src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/inbrochurebannerv2-firstsale-940ad0c283f5ed6a3798ba1cbd43a74eeae14774d2822049989d359a8efc1b4a.mp4" type="video/mp4" src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/inbrochurebannerv2-firstsale-940ad0c283f5ed6a3798ba1cbd43a74eeae14774d2822049989d359a8efc1b4a.mp4"></video></div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
